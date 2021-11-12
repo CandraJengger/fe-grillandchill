@@ -1,7 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { HeroSection, MenuSection, Navbar } from '../components';
+import {
+  AboutUsSection,
+  HeroSection,
+  MenuSection,
+  Navbar,
+} from '../components';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -20,6 +25,7 @@ const Home: NextPage = () => {
       <main className="h-screen">
         <HeroSection />
         <MenuSection />
+        <AboutUsSection />
       </main>
     </div>
   );

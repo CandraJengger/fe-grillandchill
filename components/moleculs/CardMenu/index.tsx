@@ -1,25 +1,32 @@
 import React from 'react';
 import { Button, Text, Title } from '../../atoms';
+import { Props } from './cardMenu.props';
+import Image from 'next/image';
 
-const CardMenu = () => {
+const CardMenu: React.FC<Props> = ({ title, menus = [], price }) => {
   return (
-    <div className="max-w-sm rounded-3xl shadow-lg inline-block mx-4">
+    <div className="max-w-sm rounded-3xl shadow-xl inline-block mx-4 my-9 bg-white">
+      <div className="h-24 w-full mb-5">
+        <Image
+          src="https://source.unsplash.com/384x160"
+          height={160}
+          width={384}
+          layout="responsive"
+          objectFit="cover"
+          className="rounded-t-3xl"
+        />
+      </div>
       <div className="p-6 flex items-center flex-col">
-        <Title as="h3" text="Paket 1: 2 - 3 Orang" />
+        <Title as="h3" text={title || 'Paket 1'} />
         <div>
           <ul className="text-center mt-3">
-            <li className="font-light">150 GR Premium Shorplate Beef</li>
-            <li className="font-light">200 GR Chicken Filet</li>
-            <li className="font-light">100 GR Side dish</li>
-            <li className="font-light">4 Variant Saus</li>
-            <li className="font-light">1 Sesame Oil</li>
-            <li className="font-light">3 Sumpit + Paper Plate</li>
-            <li className="font-light">1 Pack Selada Bombai</li>
-            <li className="font-light">1 Set Grill Pan + Gas</li>
+            {menus.map((menu: string) => (
+              <li className="font-light">{menu}</li>
+            ))}
           </ul>
         </div>
         <div className="w-full flex justify-between items-center mt-11">
-          <Text variant="medium" text="99K" />
+          <Text variant="medium" text={price || '0K'} />
           <Button>
             Tambah ke <br />
             Keranjang
