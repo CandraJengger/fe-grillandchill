@@ -1,3 +1,4 @@
-import Hero from './Hero';
+import HeroSection from './HeroSection';
+import MenuSection from './MenuSection';
 
-export { Hero };
+export { HeroSection, MenuSection };
