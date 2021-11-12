@@ -11,6 +11,9 @@ module.exports = {
         primary: '#FFBE2E',
         black: '#242424',
       },
+      borderRadius: {
+        '4xl': '44px',
+      },
     },
   },
   variants: {
