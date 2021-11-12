@@ -32,7 +32,7 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-primary p-3 lg:px-16">
+    <nav className="relative flex items-center justify-between flex-wrap bg-primary p-3 lg:px-16">
       <div className="flex items-center flex-shrink-0 mr-6">
         <NavLogo source={DummyLogo} alt="Logo" to="/" />
       </div>
@@ -56,7 +56,7 @@ const NavBar = () => {
       <div
         className={`w-full ${
           open ? 'block' : 'hidden'
-        } flex-grow lg:flex lg:items-center lg:w-auto`}
+        } absolute -bottom-36 left-0 lg:relative lg:bottom-0 bg-primary z-10 flex-grow lg:flex lg:items-center lg:w-auto shadow-md lg:shadow-none pb-4 lg:pb-0`}
       >
         <div className="text-sm lg:flex-grow lg:flex lg:justify-center">
           {link?.map((item: LinkInterface) => (
