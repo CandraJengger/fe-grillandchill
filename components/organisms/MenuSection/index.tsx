@@ -21,7 +21,7 @@ const MenuSection = () => {
     <section id="menu" className="pt-16 relative mb-24">
       <Title
         text="Menu Favorit"
-        customStyles="pl-0 lg:pl-14 text-center lg:text-left"
+        customStyles="pl-0 lg:pl-16 text-center lg:text-left"
       />
       <div className="flex flex-col sm:flex-row justify-cente max-w-max mx-auto mb-8">
         <Button

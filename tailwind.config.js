@@ -14,6 +14,9 @@ module.exports = {
       borderRadius: {
         '4xl': '44px',
       },
+      width: {
+        420: '420px',
+      },
     },
   },
   variants: {

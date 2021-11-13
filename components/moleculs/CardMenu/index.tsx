@@ -10,8 +10,10 @@ const CardMenu: React.FC<Props> = ({ title, menus = [], price }) => {
         <Title as="h3" text={title || 'Paket 1'} />
         <div>
           <ul className="text-center mt-3">
-            {menus.map((menu: string) => (
-              <li className="font-light">{menu}</li>
+            {menus.map((menu: string, index) => (
+              <li className="font-light" key={index}>
+                {menu}
+              </li>
             ))}
           </ul>
         </div>

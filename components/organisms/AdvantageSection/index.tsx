@@ -9,7 +9,7 @@ const AdvantageSection = () => {
     <section id="advantage" className="pt-12 relative pb-16 bg-primary">
       <Title
         text="Menu Favorit"
-        customStyles="pl-0 lg:pl-14 text-center lg:text-left"
+        customStyles="pl-0 lg:pl-16 text-center lg:text-left"
       />
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
         {data.advantage.map((item: Advantage, index: any) => (

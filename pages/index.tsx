@@ -4,6 +4,7 @@ import Image from 'next/image';
 import {
   AboutUsSection,
   AdvantageSection,
+  Footer,
   HeroSection,
   InvitationSection,
   MenuSection,
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
         <AboutUsSection />
         <AdvantageSection />
         <InvitationSection />
+        <Footer />
       </main>
     </div>
   );
