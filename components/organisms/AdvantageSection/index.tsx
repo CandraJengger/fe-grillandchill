@@ -6,10 +6,7 @@ import { Advantage } from '../../../@types/allTypes';
 
 const AdvantageSection = () => {
   return (
-    <section
-      id="advantage"
-      className="mt-16 pt-12 relative pb-16 mb-24 bg-primary"
-    >
+    <section id="advantage" className="pt-12 relative pb-16 bg-primary">
       <Title
         text="Menu Favorit"
         customStyles="pl-0 lg:pl-14 text-center lg:text-left"
