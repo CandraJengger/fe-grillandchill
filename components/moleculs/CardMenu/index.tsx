@@ -26,7 +26,7 @@ const CardMenu: React.FC<Props> = ({ title, menus = [], price }) => {
           </ul>
         </div>
         <div className="w-full flex justify-between items-center mt-11">
-          <Text variant="medium" text={price || '0K'} />
+          <Text variant="large" text={price || '0K'} />
           <Button>
             Tambah ke <br />
             Keranjang

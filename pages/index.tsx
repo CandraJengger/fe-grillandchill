@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import {
   AboutUsSection,
+  AdvantageSection,
   HeroSection,
   MenuSection,
   Navbar,
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
         <HeroSection />
         <MenuSection />
         <AboutUsSection />
+        <AdvantageSection />
       </main>
     </div>
   );

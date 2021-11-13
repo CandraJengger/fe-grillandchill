@@ -1,6 +1,7 @@
-import { Packet } from '../@types/allTypes';
+import { Advantage, Packet } from '../@types/allTypes';
 interface Data {
   packets: Packet[];
+  advantage: Advantage[];
 }
 
 export const data = {
@@ -60,6 +61,20 @@ export const data = {
         '1 Set Grill Pan + Gas',
       ],
       price: '299K',
+    },
+  ],
+  advantage: [
+    {
+      image: 'https://source.unsplash.com/194x194',
+      title: 'Dimana saja & Kapan saja',
+    },
+    {
+      image: 'https://source.unsplash.com/194x194',
+      title: 'Satu Set Alat Grill dapat dibawa 1 x 24 jam',
+    },
+    {
+      image: 'https://source.unsplash.com/194x194',
+      title: 'Kami antar sampai ke depan rumah',
     },
   ],
 };

@@ -6,8 +6,11 @@ import Dummy from '../../../public/AboutUs/dummy_about.png';
 
 const AboutUsSection = () => {
   return (
-    <section id="about-us" className="mt-16 grid grid-cols-1 lg:grid-cols-2">
-      <div className="flex justify-center">
+    <section
+      id="about-us"
+      className="mt-16 grid grid-cols-1 lg:grid-cols-2 mb-24"
+    >
+      <div className="flex justify-center p-4 md:p-6">
         <Image src={Dummy} width={422} height={360} />
       </div>
       <div className="flex flex-col justify-center p-4 md:p-6 pt-10 md:pt-14">

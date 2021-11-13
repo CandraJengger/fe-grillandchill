@@ -3,3 +3,8 @@ export interface Packet {
   menus: string[];
   price: string;
 }
+
+export interface Advantage {
+  image: string;
+  title: string;
+}
