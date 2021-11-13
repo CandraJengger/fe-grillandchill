@@ -8,3 +8,10 @@ export interface Advantage {
   image: string;
   title: string;
 }
+
+export interface Testimonial {
+  name: string;
+  address: string;
+  image: string;
+  review: string;
+}

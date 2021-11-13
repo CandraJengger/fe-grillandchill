@@ -17,6 +17,9 @@ module.exports = {
       width: {
         420: '420px',
       },
+      zIndex: {
+        0: '-11',
+      },
     },
   },
   variants: {

@@ -5,5 +5,6 @@ import Gap from './Gap';
 import Title from './Title';
 import Button from './Button';
 import Text from './Text';
+import NameCard from './NameCard';
 
-export { Gap, NavLink, NavLogo, ButtonIcon, Title, Button, Text };
+export { Gap, NavLink, NavLogo, ButtonIcon, Title, Button, Text, NameCard };

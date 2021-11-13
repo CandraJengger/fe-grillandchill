@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Button, Gap, Title } from '../../atoms';
 import { CardMenu } from '../../moleculs';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-import 'swiper/swiper-bundle.min.css';
-import 'swiper/swiper.min.css';
 import { data } from '../../../data/data';
 import { Packet } from '../../../@types/allTypes';
 import Image from 'next/image';
 import Vector from '../../../public/Menu/vec-1.svg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper.min.css';
 
 // modules styles
 // import 'swiper/components/navigation/navigation.min.css';

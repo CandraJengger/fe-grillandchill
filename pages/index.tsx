@@ -9,6 +9,7 @@ import {
   InvitationSection,
   MenuSection,
   Navbar,
+  TestimonialSection,
 } from '../components';
 import styles from '../styles/Home.module.css';
 
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
         <AboutUsSection />
         <AdvantageSection />
         <InvitationSection />
+        <TestimonialSection />
         <Footer />
       </main>
     </div>

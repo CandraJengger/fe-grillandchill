@@ -1,7 +1,8 @@
-import { Advantage, Packet } from '../@types/allTypes';
+import { Advantage, Packet, Testimonial } from '../@types/allTypes';
 interface Data {
   packets: Packet[];
   advantage: Advantage[];
+  testimonial: Testimonial[];
 }
 
 export const data = {
@@ -75,6 +76,36 @@ export const data = {
     {
       image: 'https://source.unsplash.com/194x194',
       title: 'Kami antar sampai ke depan rumah',
+    },
+  ],
+  testimonial: [
+    {
+      name: 'Cak Jengger',
+      address: 'Ponorogo',
+      review:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: 'https://source.unsplash.com/54x54',
+    },
+    {
+      name: 'Candra',
+      address: 'Madiun',
+      review:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: 'https://source.unsplash.com/54x54',
+    },
+    {
+      name: 'Putra',
+      address: 'Klaten',
+      review:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: 'https://source.unsplash.com/54x54',
+    },
+    {
+      name: 'Dimas',
+      address: 'Concat',
+      review:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: 'https://source.unsplash.com/54x54',
     },
   ],
 };

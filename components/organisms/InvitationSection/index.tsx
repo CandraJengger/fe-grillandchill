@@ -8,7 +8,7 @@ const InvitationSection = () => {
   return (
     <section
       id="invitation"
-      className="pt-14 grid grid-cols-1 xl:grid-cols-12 pb-20"
+      className="pt-24 grid grid-cols-1 xl:grid-cols-12 pb-20"
     >
       <div className="xl:col-start-2 xl:col-end-8 flex flex-col items-center xl:items-start text-center xl:text-left p-4 mb-12 md:p-6 pt-10 md:pt-14 lg:px-24 xl:p-6">
         <Title>
