@@ -18,7 +18,7 @@ const MenuSection = () => {
   const [category, setCategory] = useState('makanan');
 
   return (
-    <section id="menu" className="pt-16 relative mb-24">
+    <section id="menu" className="pt-16 relative">
       <Title
         text="Menu Favorit"
         customStyles="pl-0 lg:pl-16 text-center lg:text-left"
