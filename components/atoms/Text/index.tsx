@@ -1,7 +1,8 @@
 import React from 'react';
 import { Props } from './text.props';
 
-const Text: React.FC<Props> = ({ text, variant = 'base' }) => {
+const Text: React.FC<Props> = ({ text, variant = 'base', children }) => {
+  const content = children || text;
   return (
     <p
       className={`${
@@ -12,7 +13,7 @@ const Text: React.FC<Props> = ({ text, variant = 'base' }) => {
           : 'text-base font-semibold'
       }`}
     >
-      {text}
+      {content}
     </p>
   );
 };
