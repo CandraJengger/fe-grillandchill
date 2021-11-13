@@ -56,8 +56,8 @@ const MenuSection = () => {
           },
         }}
       >
-        {data.packets.map((item: Packet) => (
-          <SwiperSlide key={item.title}>
+        {data.packets.map((item: Packet, index: any) => (
+          <SwiperSlide key={index}>
             <CardMenu
               title={item.title}
               menus={item.menus}

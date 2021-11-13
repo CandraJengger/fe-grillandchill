@@ -5,6 +5,7 @@ import {
   AboutUsSection,
   AdvantageSection,
   HeroSection,
+  InvitationSection,
   MenuSection,
   Navbar,
 } from '../components';
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
         <MenuSection />
         <AboutUsSection />
         <AdvantageSection />
+        <InvitationSection />
       </main>
     </div>
   );
