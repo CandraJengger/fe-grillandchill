@@ -8,7 +8,7 @@ import { Gap } from '../../atoms';
 
 const HeroSection = () => {
   return (
-    <section className="bg-primary relative flex flex-col lg:flex-row justify-center items-center h-5/6 lg:h-3/5 rounded-b-4xl">
+    <section className="bg-primary relative flex flex-col lg:flex-row justify-center items-center h-4/6 lg:h-3/5 rounded-b-4xl">
       <h1 className="font-knewave text-6xl sm:text-7xl md:text-8xl lg:pl-24 lg:self-center transform -translate-y-40 lg:translate-y-0 ">
         Nge-Grill <br /> <span className="pl-12 md:pl-24"> 24 jam</span>
       </h1>
