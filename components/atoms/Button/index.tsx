@@ -13,7 +13,7 @@ const Button: React.FC<Props & Record<string, any>> = ({
     <>
       {active ? (
         <button
-          className={`border border-black bg-primary hover:bg-white  py-3 px-8 
+          className={`border border-black bg-primary hover:bg-yellow-300  py-3 px-8 
     rounded-4xl text-base text-black`}
           onClick={onClick}
           {...props}

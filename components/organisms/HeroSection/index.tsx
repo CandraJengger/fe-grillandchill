@@ -5,13 +5,18 @@ import Dummy from '../../../public/Hero/dummy_hero.png';
 import BottomRight from '../../../public/Hero/hero_bottom_right.svg';
 import BottomLeft from '../../../public/Hero/hero_bottom_left.svg';
 import { Gap } from '../../atoms';
+import Fade from 'react-reveal/Fade';
 
 const HeroSection = () => {
   return (
     <section className="bg-primary relative flex flex-col lg:flex-row justify-center items-center h-4/6 lg:h-3/5 rounded-b-4xl">
-      <h1 className="font-knewave text-6xl sm:text-7xl md:text-8xl lg:pl-24 lg:self-center transform -translate-y-40 lg:translate-y-0 ">
-        Nge-Grill <br /> <span className="pl-12 md:pl-24"> 24 jam</span>
-      </h1>
+      <div className="transform -translate-y-40 lg:translate-y-0 ">
+        <Fade right duration={1000} delay={500} distance="100px">
+          <h1 className="font-knewave text-6xl sm:text-7xl md:text-8xl lg:pl-24 lg:self-center">
+            Nge-Grill <br /> <span className="pl-12 md:pl-24"> 24 jam</span>
+          </h1>
+        </Fade>
+      </div>
       <div className="hidden lg:inline-block">
         <Gap width="110px" height="10px" />
       </div>
