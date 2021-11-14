@@ -9,3 +9,27 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 0.75rem;
   height: 0.75rem;
 }
+
+.swiper-button-next {
+  @apply bg-white h-14 w-14 rounded-full border border-black hover:bg-black !important;
+}
+
+.swiper-button-next:hover::after {
+  @apply text-white !important;
+}
+
+.swiper-button-next::after {
+  @apply text-xl text-black !important;
+}
+
+.swiper-button-prev {
+  @apply bg-white h-14 w-14 rounded-full border border-black hover:bg-black !important;
+}
+
+.swiper-button-prev:hover::after {
+  @apply text-white !important;
+}
+
+.swiper-button-prev::after {
+  @apply text-xl text-black !important;
+}

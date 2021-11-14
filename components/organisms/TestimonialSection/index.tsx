@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Vector from '../../../public/Testimonial/Vector.svg';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
+import SwiperCore, { Pagination, Navigation } from 'swiper';
 
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';

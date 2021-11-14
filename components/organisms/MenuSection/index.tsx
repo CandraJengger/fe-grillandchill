@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Gap, Title } from '../../atoms';
 import { CardMenu } from '../../moleculs';
 import { data } from '../../../data/data';
@@ -6,16 +6,28 @@ import { Packet } from '../../../@types/allTypes';
 import Image from 'next/image';
 import Vector from '../../../public/Menu/vec-1.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation } from 'swiper';
 
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 
+SwiperCore.use([Navigation]);
+
 // modules styles
-// import 'swiper/components/navigation/navigation.min.css';
+import 'swiper/components/navigation/navigation.min.css';
 // import 'swiper/components/pagination/pagination.min.css';
 
 const MenuSection = () => {
   const [category, setCategory] = useState('makanan');
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth > 1024) {
+      setIsDesktop(true);
+    } else {
+      setIsDesktop(false);
+    }
+  }, []);
 
   return (
     <section id="menu" className="pt-16 relative">
@@ -41,6 +53,7 @@ const MenuSection = () => {
         spaceBetween={8}
         centeredSlides={true}
         centeredSlidesBounds={true}
+        navigation={!isDesktop}
         breakpoints={{
           '540': {
             slidesPerView: 2,
