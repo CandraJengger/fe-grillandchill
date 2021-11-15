@@ -66,9 +66,13 @@ const ExtraMenuSection = () => {
             },
           }}
         >
-          {[1, 2, 3, 4, 5, 6, 7].map((item: number) => (
-            <SwiperSlide key={item}>
-              <CardExtraMenu key={item} />
+          {data.extraMenus.map((item: ExtraMenu) => (
+            <SwiperSlide key={item.title}>
+              <CardExtraMenu
+                image={item.image}
+                title={item.title}
+                price={item.price}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
