@@ -13,8 +13,8 @@ const Title: React.FC<Props> = ({
   return (
     <Tag
       className={`${
-        as === 'h2' ? 'text-4xl' : 'text-2xl'
-      } font-semibold text-black mb-6 ${customStyles} z-30`}
+        as === 'h2' ? 'text-4xl mb-6' : 'text-2xl mb-2'
+      } font-semibold text-black m-0 ${customStyles} z-30`}
     >
       {content}
     </Tag>

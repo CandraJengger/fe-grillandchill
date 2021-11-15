@@ -4,6 +4,7 @@ import CardAdvantage from './CardAdvantage';
 import Footer from './Footer';
 import CardTestimonial from './CardTestimonial';
 import CardExtraMenu from './CardExtraMenu';
+import CardCart from './CardCart';
 
 export {
   Navbar,
@@ -12,4 +13,5 @@ export {
   Footer,
   CardTestimonial,
   CardExtraMenu,
+  CardCart,
 };

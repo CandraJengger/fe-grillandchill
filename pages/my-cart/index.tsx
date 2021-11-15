@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import {
+  CartSection,
   ExtraMenuSection,
   Footer,
   Gap,
@@ -22,6 +23,7 @@ const MyCart = () => {
       </header>
 
       <main className="h-screen">
+        <CartSection />
         <ExtraMenuSection />
         <MenuSection />
         <Gap height="65px" width="150px" />

@@ -5,6 +5,7 @@ import AdvantageSection from './AdvantageSection';
 import InvitationSection from './InvitationSection';
 import TestimonialSection from './TestimonialSection';
 import ExtraMenuSection from './ExtraMenuSection';
+import CartSection from './CartSection';
 
 export {
   HeroSection,
@@ -14,4 +15,5 @@ export {
   InvitationSection,
   TestimonialSection,
   ExtraMenuSection,
+  CartSection,
 };
