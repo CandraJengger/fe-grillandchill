@@ -10,26 +10,22 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   height: 0.75rem;
 }
 
-.swiper-button-next {
-  @apply bg-white h-14 w-14 rounded-full border border-black hover:bg-black !important;
-}
-
-.swiper-button-next:hover::after {
-  @apply text-white !important;
-}
-
-.swiper-button-next::after {
-  @apply text-xl text-black !important;
-}
-
+.swiper-button-next,
 .swiper-button-prev {
   @apply bg-white h-14 w-14 rounded-full border border-black hover:bg-black !important;
 }
 
+.swiper-button-next:hover::after,
 .swiper-button-prev:hover::after {
   @apply text-white !important;
 }
 
+.swiper-button-next::after,
 .swiper-button-prev::after {
   @apply text-xl text-black !important;
+}
+
+#extra-menu .swiper-button-next,
+#extra-menu .swiper-button-prev {
+  @apply transform -translate-y-16;
 }

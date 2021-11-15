@@ -1,11 +1,12 @@
-import { Advantage, Packet, Testimonial } from '../@types/allTypes';
+import { Advantage, ExtraMenu, Packet, Testimonial } from '../@types/allTypes';
 interface Data {
   packets: Packet[];
   advantage: Advantage[];
   testimonial: Testimonial[];
+  extraMenus: ExtraMenu[];
 }
 
-export const data = {
+export const data: Data = {
   packets: [
     {
       title: 'Paket 1: 2-3 orang',
@@ -106,6 +107,43 @@ export const data = {
       review:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       image: 'https://source.unsplash.com/54x54',
+    },
+  ],
+  extraMenus: [
+    {
+      image: 'https://source.unsplash.com/120x120',
+      price: '99K',
+      title: '500 GR Shortplate Beef',
+    },
+    {
+      image: 'https://source.unsplash.com/120x120',
+      price: '40K',
+      title: '300 GR Chicken Filet',
+    },
+    {
+      image: 'https://source.unsplash.com/120x120',
+      price: '60K',
+      title: '200 GR Saikoro Wagyu',
+    },
+    {
+      image: 'https://source.unsplash.com/120x120',
+      price: '30K',
+      title: '1 Paket Sidedish',
+    },
+    {
+      image: 'https://source.unsplash.com/120x120',
+      price: '35K',
+      title: '1 Paket Sosis Beckwurst',
+    },
+    {
+      image: 'https://source.unsplash.com/120x120',
+      price: '15K',
+      title: '1 Paket Selada + Bombai',
+    },
+    {
+      image: 'https://source.unsplash.com/120x120',
+      price: '7/10K',
+      title: '1 Cup Saus Sedang/Besar',
     },
   ],
 };

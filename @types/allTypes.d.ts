@@ -15,3 +15,9 @@ export interface Testimonial {
   image: string;
   review: string;
 }
+
+export interface ExtraMenu {
+  image: string;
+  title: string;
+  price: string;
+}
