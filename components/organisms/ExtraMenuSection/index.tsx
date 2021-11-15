@@ -37,7 +37,7 @@ const ExtraMenuSection = () => {
       <div className="hidden lg:flex justify-center flex-wrap">
         {data.extraMenus.map((item: ExtraMenu) => (
           <CardExtraMenu
-            key={item}
+            key={item.title}
             image={item.image}
             title={item.title}
             price={item.price}
