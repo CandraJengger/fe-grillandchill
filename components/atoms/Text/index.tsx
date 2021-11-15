@@ -17,6 +17,8 @@ const Text: React.FC<Props> = ({
           ? 'text-3xl font-semibold'
           : variant === 'medium'
           ? 'text-xl'
+          : variant === 'small'
+          ? 'text-sm'
           : 'text-base font-semibold'
       } ${customStyles}`}
     >

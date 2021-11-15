@@ -29,7 +29,10 @@ const ExtraMenuSection = () => {
   }, []);
 
   return (
-    <section id="extra-menu" className="pt-16 relative overflow-hidden">
+    <section
+      id="extra-menu"
+      className="pt-16 relative overflow-hidden transform lg:-translate-y-28"
+    >
       <Title
         text="Extra Menu"
         customStyles="pl-0 lg:pl-16 text-center lg:text-left"

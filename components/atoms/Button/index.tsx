@@ -6,6 +6,7 @@ const Button: React.FC<Props & Record<string, any>> = ({
   onClick,
   text,
   active,
+  customStyles,
   ...props
 }) => {
   const content = children || text;
@@ -14,7 +15,7 @@ const Button: React.FC<Props & Record<string, any>> = ({
       {active ? (
         <button
           className={`border border-black bg-primary hover:bg-yellow-300  py-3 px-8 
-    rounded-4xl text-base text-black`}
+    rounded-4xl text-base text-black ${customStyles}`}
           onClick={onClick}
           {...props}
         >
@@ -23,7 +24,7 @@ const Button: React.FC<Props & Record<string, any>> = ({
       ) : (
         <button
           className={`border border-black bg-white hover:bg-primary  py-3 px-8 
-    rounded-4xl text-base text-black`}
+    rounded-4xl text-base text-black ${customStyles}`}
           onClick={onClick}
           {...props}
         >

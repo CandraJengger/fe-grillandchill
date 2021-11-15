@@ -5,7 +5,7 @@ import Icon from '../../../public/Cart/trash.svg';
 
 const CardCart = () => {
   return (
-    <div className="border-b border-gray-600 mb-9">
+    <div className="border-b border-gray-600 mb-9 mr-4">
       <Title text="Paket 1: 2-3" as="h3" />
       <Text text="Rp. 199.000" />
       <div className="flex justify-start items-center mt-5 mb-9">
