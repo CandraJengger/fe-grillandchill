@@ -1,7 +1,9 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 import { Button, Input, Text, Title } from '../../atoms';
 
 const SummaryOrder = () => {
+  const router = useRouter();
   return (
     <aside className="rounded-3xl shadow-xl p-6 md:mx-6 mb-12 z-20 transform translate-y-4">
       <Title as="h3" text="Detail Pengiriman" customStyles="text-primary" />
@@ -38,7 +40,12 @@ const SummaryOrder = () => {
         <Text text="Link Aja: 08xxxxxx" />
       </div>
 
-      <Button active text="Checkout" customStyles="w-full" />
+      <Button
+        active
+        text="Checkout"
+        customStyles="w-full"
+        onClick={() => router.push('/success')}
+      />
     </aside>
   );
 };

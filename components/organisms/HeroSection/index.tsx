@@ -9,7 +9,10 @@ import Fade from 'react-reveal/Fade';
 
 const HeroSection = () => {
   return (
-    <section className="bg-primary relative flex flex-col lg:flex-row justify-center items-center h-4/6 lg:h-3/5 rounded-b-4xl">
+    <section
+      id="hero"
+      className="bg-primary relative flex flex-col lg:flex-row justify-center items-center h-4/6 lg:h-4/5 rounded-b-4xl"
+    >
       <div className="transform -translate-y-40 lg:translate-y-0 ">
         <Fade right duration={1000} delay={500} distance="100px">
           <h1 className="font-knewave text-6xl sm:text-7xl md:text-8xl lg:pl-24 lg:self-center">

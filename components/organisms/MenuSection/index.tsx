@@ -79,7 +79,7 @@ const MenuSection = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="absolute bottom-0 -left-28">
+      <div className="absolute bottom-0 -left-28 z-0">
         <Image src={Vector} width={700} height={600} />
       </div>
     </section>

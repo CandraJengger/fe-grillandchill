@@ -29,3 +29,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 #extra-menu .swiper-button-prev {
   @apply transform -translate-y-16;
 }
+
+html {
+  scroll-behavior: smooth;
+}

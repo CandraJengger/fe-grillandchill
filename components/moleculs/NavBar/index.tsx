@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ButtonIcon, Gap, NavLink, NavLogo } from '../../atoms';
+import { useRouter } from 'next/router';
 
 import IconCart from '../../../public/Navbar/cart.svg';
 import DummyLogo from '../../../public/Navbar/dummy_logo.png';
@@ -12,27 +13,30 @@ interface LinkInterface {
 const link = [
   {
     title: 'Home',
-    link: '/',
+    link: '/#hero',
   },
   {
     title: 'Menu',
-    link: '/',
+    link: '/#menu',
   },
   {
     title: 'Tentang Kami',
-    link: '/',
+    link: '/#about-us',
   },
   {
     title: 'Testimoni',
-    link: '/',
+    link: '/#testimonial',
   },
 ];
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
+
+  const handleCart = () => router.push('/my-cart');
 
   return (
-    <nav className="relative flex items-center justify-between flex-wrap bg-primary p-3 lg:px-16">
+    <nav className="fixed w-full flex items-center justify-between flex-wrap bg-primary p-3 lg:px-16 z-30">
       <div className="flex items-center flex-shrink-0 mr-6">
         <NavLogo source={DummyLogo} alt="Logo" to="/" />
       </div>
@@ -65,7 +69,7 @@ const NavBar = () => {
         </div>
       </div>
       <div className="hidden lg:block">
-        <ButtonIcon source={IconCart} alt="Icon Cart" />
+        <ButtonIcon source={IconCart} alt="Icon Cart" onClick={handleCart} />
       </div>
     </nav>
   );

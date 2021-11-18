@@ -6,6 +6,7 @@ import InvitationSection from './InvitationSection';
 import TestimonialSection from './TestimonialSection';
 import ExtraMenuSection from './ExtraMenuSection';
 import CartSection from './CartSection';
+import SuccessSection from './SuccessSection';
 
 export {
   HeroSection,
@@ -16,4 +17,5 @@ export {
   TestimonialSection,
   ExtraMenuSection,
   CartSection,
+  SuccessSection,
 };

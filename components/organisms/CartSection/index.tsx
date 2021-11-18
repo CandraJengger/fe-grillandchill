@@ -6,7 +6,7 @@ const CartSection = () => {
   return (
     <section
       id="cart"
-      className="pt-16 relative overflow-hidden flex flex-col lg:flex-row justify-between px-6 lg:px-16"
+      className="pt-16 lg:pt-32 relative overflow-hidden flex flex-col lg:flex-row justify-between px-6 lg:px-16"
     >
       <div className="flex-grow">
         <Title
