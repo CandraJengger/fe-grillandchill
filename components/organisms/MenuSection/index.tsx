@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Gap, Title } from '../../atoms';
-import { CardMenu } from '../../moleculs';
+import { CardExtraMenu, CardMenu } from '../../moleculs';
 import { data } from '../../../data/data';
-import { Packet } from '../../../@types/allTypes';
+import { ExtraMenu, Packet } from '../../../@types/allTypes';
 import Image from 'next/image';
 import Vector from '../../../public/Menu/vec-1.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -69,17 +69,27 @@ const MenuSection = () => {
           },
         }}
       >
-        {data.packets.map((item: Packet, index: any) => (
-          <SwiperSlide key={index}>
-            <CardMenu
-              title={item.title}
-              menus={item.menus}
-              price={item.price}
-            />
-          </SwiperSlide>
-        ))}
+        {category === 'makanan'
+          ? data.packets.map((item: Packet, index: any) => (
+              <SwiperSlide key={index}>
+                <CardMenu
+                  title={item.title}
+                  menus={item.menus}
+                  price={item.price}
+                />
+              </SwiperSlide>
+            ))
+          : data.extraMenus.map((item: ExtraMenu) => (
+              <SwiperSlide key={item.title}>
+                <CardExtraMenu
+                  image={item.image}
+                  title={item.title}
+                  price={item.price}
+                />
+              </SwiperSlide>
+            ))}
       </Swiper>
-      <div className="absolute bottom-0 -left-28 z-0">
+      <div className="absolute top-48 lg:top-28 -left-28 z-0">
         <Image src={Vector} width={700} height={600} />
       </div>
     </section>

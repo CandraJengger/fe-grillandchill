@@ -9,7 +9,7 @@ const CardExtraMenu: React.FC<Props & Record<string, any>> = ({
   price,
 }) => {
   return (
-    <article className="card-extra-menu rounded-3xl shadow-xl inline-block mx-5 my-9 bg-white transform hover:-translate-y-3 duration-150 p-6">
+    <article className="card-extra-menu w-full max-w-xs rounded-3xl shadow-xl inline-block mx-5 my-9 bg-white transform hover:-translate-y-3 duration-150 p-6">
       <div className="mx-auto w-max">
         <Image src={image} height={120} width={120} />
       </div>
