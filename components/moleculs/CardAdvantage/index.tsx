@@ -8,7 +8,7 @@ const CardAdvantage: React.FC<Props & Record<string, any>> = ({
   title,
 }) => {
   return (
-    <article className="w-52 flex flex-col items-center mx-8 lg:mx-14 my-6 xl:mx-24">
+    <article className="w-52 flex flex-col items-center mx-4 lg:mx-14 my-6 xl:mx-24">
       <Image src={image} width={194} height={194} />
       <div className="pt-9 text-center">
         <Text text={title} variant="medium" />

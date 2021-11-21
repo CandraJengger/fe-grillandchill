@@ -12,7 +12,6 @@ export interface Advantage {
 export interface Testimonial {
   name: string;
   address: string;
-  image: string;
   review: string;
 }
 

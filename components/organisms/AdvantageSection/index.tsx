@@ -16,15 +16,21 @@ const AdvantageSection = () => {
         distance="30px"
       >
         <Title
-          text="Menu Favorit"
+          text="Kenapa Kami ?"
           customStyles="pl-0 lg:pl-16 text-center lg:text-left"
         />
       </Fade>
 
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
         {data.advantage.map((item: Advantage, index: any) => (
-          <Fade bottom duration={1000} delay={500 * index} distance="30px">
-            <CardAdvantage key={index} image={item.image} title={item.title} />
+          <Fade
+            bottom
+            duration={1000}
+            delay={500 * index}
+            distance="30px"
+            key={index}
+          >
+            <CardAdvantage image={item.image} title={item.title} />
           </Fade>
         ))}
       </div>

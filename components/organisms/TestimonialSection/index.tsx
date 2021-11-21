@@ -40,7 +40,6 @@ const TestimonialSection = () => {
         {data.testimonial.map((item: Testimonial, index: any) => (
           <SwiperSlide key={index} className="mb-28">
             <CardTestimonial
-              image={item.image}
               name={item.name}
               review={item.review}
               address={item.address}

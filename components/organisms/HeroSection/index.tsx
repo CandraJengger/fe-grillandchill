@@ -11,11 +11,11 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="bg-primary relative flex flex-col lg:flex-row justify-center items-center h-4/6 lg:h-4/5 rounded-b-4xl"
+      className="bg-primary relative flex flex-col lg:flex-row justify-center items-center h-5/6 lg:h-4/5 rounded-b-4xl"
     >
-      <div className="transform -translate-y-40 lg:translate-y-0 ">
+      <div className="transform -translate-y-28 lg:translate-y-0 ">
         <Fade right duration={1000} delay={500} distance="100px">
-          <h1 className="font-knewave text-6xl sm:text-7xl md:text-8xl lg:pl-24 lg:self-center">
+          <h1 className="font-knewave text-5xl sm:text-7xl md:text-8xl lg:pl-24 lg:self-center">
             Nge-Grill <br /> <span className="pl-12 md:pl-24"> 24 jam</span>
           </h1>
         </Fade>
